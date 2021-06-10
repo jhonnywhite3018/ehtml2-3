@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<title>Formulario de registro</title>
+</head>
+
+<body>
+	<form action="" method="get">
+	<fieldset>
+	<legend>¿Quien eres?</legend>
+	 	<p>Nombre*: 
+		<input type="text" name="nombre" maxlength="50" size="52" autofocus="autofocus" required="required" />
+	 	<label for="texto">Apellido*:</label> 
+		<input type="text" name="apellido" maxlength="50" size="52" required="required" /></p>
+		<p>Email*: <input type="email" value="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"/>
+		Fecha de nacimiento: <input type="date" name="fecha"/></p>
+	</fieldset>
+	¿ ?
+	<fieldset>
+	<legend>¿ De donde eres?</legend>
+		<p>Ciudad: <input type="text" name="nombre" maxlength="50" size="52" placeholder="Tu ciudad"/></p>
+		<p>Código postal: <input type="text" pattern="[0-9]{5}" id="zipcode" name="texto"/></p>
+		<p><label for="texto">Población:</label>
+ 	 	<select name="provincia">
+ 		<option value="av">Ávila</option>
+ 		<option value="Ma">Madrid</option>
+		<option value="Se">Sevilla</option>
+		<option value="Sa">Santander</option>
+ 		</select></p>
+	</fieldset>
+	
+	<fieldset>
+	<legend>¿Como quieres iniciar sesión?</legend>
+		<p>Usuario*: <input type="text" name="usuario" maxlength="50" size="52" required="required" /></p>
+		<p>Contraseña*: <input type="text" name="contraseña" maxlength="50" size="52" required="required" /></p>
+		<p>reoetir contraseña*: <input type="text" name="contraseña" maxlength="50" size="52" required="required" /></p>
+	</fieldset>
+	
+	<fieldset>
+		<legend>Condiciones de registro</legend>
+		<p>Deseo recibir ofertas 
+			<input type="radio" name="dia" value="dia" checked="checked"/><label for="texto">Una vez al día</label>
+			<input type="radio" name="semana" value="semana"/><label for="texto">Una vez a la semana</label>
+			<input type="radio" name="mes" value="mes"/><label for="texto">Una vez al mes</label>
+		</p>
+		<p><input type="checkbox" name="acuerdo" value="acuerdo"/>Acepto el acuerdo de servicios, la declaracón de privacidad y la declaración de usos de cookies</p>
+	</fieldset>
+	
+		
+ 	 	<p><input type="submit" value="Crear cuenta" /></p>
+	</form>
+</body>
+</html>
